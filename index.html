@@ -4,12 +4,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Roboto:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400;1,700;1,900&display=swap">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Tribute Page</title>
-    <script src=""  type="text/javascript"></script>
 </head>
 <body>
-    <h1>Hello World</h1>
     <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+    <div id="main">
+        <header>
+            <h1 id="title">A. P. J. Abdul Kalam</h1>
+            <p id="subtitle">Missile man of India</p>
+            <nav>
+                <ul id="navigation">
+                    <li class="one">About</li>
+                    <li>Awards</li>
+                    <li>Books</li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <div id="info">
+                    <figure id="img-div">
+                        <img id="img" src="https://upload.wikimedia.org/wikipedia/commons/7/79/Dr_A_P_J_Abdul_Kalam_addresses_the_14th_Convocation_ceremony_at_the_Indian_Institute_of_Technology_Guwahati.jpg" alt="APJ. Abdul Kalam addressing engineering students">
+                        <figcaption id="img-caption">A.P.J. Abdul Kalam adressing engineering student of IIT Guwahati</figcaption>
+                    </figure>
+                </div>
+                <article id="tribute-info">
+                    <div class="about-section">
+                        <div>
+                            <h2>About</h2>
+                            <p>
+                                Avul Pakir Jainulabdeen Abdul Kalam was an Indian aerospace scientist who served as the 11th president of India from 2002 to 2007. He was born and raised in Rameswaram, Tamil Nadu and studied physics and aerospace engineering. He spent the next four decades as a scientist and science administrator, mainly at the Defence Research and Development Organisation (DRDO) and Indian Space Research Organisation (ISRO) and was intimately involved in India's civilian space programme and military missile development efforts. He thus came to be known as the Missile Man of India for his work on the development of ballistic missile and launch vehicle technology. He also played a pivotal organisational, technical, and political role in India's Pokhran-II nuclear tests in 1998, the first since the original nuclear test by India in 1974.
+                            </p>
+                        </div>
+                        <div class="personal">
+                            <h2>Personal Info</h2>
+                            <div class="personal-info">
+                                <div class="born">
+                                    <h3>Born</h3>
+                                    <p class="born-text">	Avul Pakir Jainulabdeen Abdul Kalam 15 October 1931 Rameswaram, Madras Presidency, British India (present-day Tamil Nadu, India)</p>
+                                </div> 
+                                <div class="died">   
+                                    <h3>Died</h3>
+                                    <p>27 July 2015 (aged 83) Shillong, Meghalaya, India</p>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>  
+                </article>
+            </section>
+            <section id="awards">
+                <h2>Awards</h2>
+                <div class="awards-list">
+                    <ul>
+                        <li>1981: Padma Bhushan – Government of India</li>
+                        <li>1990: Padma Vibhushan – Government of India</li>
+                        <li>1997: Bharat Ratna – Government of India</li>
+                        <li>1997: Indira Gandhi Award for National Integration – Government of India</li>
+                        <li>1998: Veer Savarkar Award – Government of India</li>
+                        <li>2000: SASTRA Ramanujan Prize – Shanmugha Arts, Science, Technology & Research Academy, India</li>
+                        <li>2013: Von Braun Award – National Space Society</li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <h2 class="book-title">Books</h2>
+                <div id="books-list">
+                    <div class="book">
+                        <figure class="book-img">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/3/3a/Wings_of_Fire_by_A_P_J_Abdul_Kalam_Book_Cover.jpg" alt="Wings of fire book by A.P.J. Abdul Kalam">
+                            <figcaption>Autobiography by A.P.J. Abdul Kalam, "Wings of fire"</figcaption>
+                        </figure>
+                    </div>
+                    <div class="book">
+                        <figure class="book-img">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/1/19/INDIA_2020_.jpg" alt="India 2020: A Vision for the New Millennium">
+                            <figcaption>India 2020, talks about Kalam's ideas for India's future and for developing India"</figcaption>
+                        </figure>
+                    </div>
+                    <div class="book">
+                        <figure class="book-img">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/7/78/Ignited_Minds.jpg" alt="Ignited Minds: Unleashing the Power Within India">
+                            <figcaption>This book consists of many inspirational messages by A P J Abdul Kalam"</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <p><q>Failure will never overtake me if my determination to succeed is strong enough.</q> - A.P.J. Abdul Kalam</p>
+                <img id="avatar" src="https://i2.wp.com/kashmirreader.com/wp-content/uploads/2020/07/Dr-APJ-Abdul-Kalam.jpg?fit=272%2C268&ssl=1" alt="A.P.J Abdul Kalam">
+                <h2>Learn more about incredible A.P.J. Abdul Kalam, <a href="https://en.wikipedia.org/wiki/A._P._J._Abdul_Kalam" target="_blank">on wikipedia</h2>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; Tribute Page Test</p>
+        </footer>
+    </div>
 </body>
 </html>

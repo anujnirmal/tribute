@@ -1,3 +1,184 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 body{
-    background-color: aqua;
+    font-family: 'Roboto', sans-serif;
+    background-color: hsl(124, 60%, 95%);
+}
+
+root{
+    --sub-black: #4b4b4b;
+    --main-black: #3d3d3d;
+}
+
+header{
+    background-color: hsl(143, 100%, 90%);
+}
+main{
+    /* background-color: blue; */
+}
+footer{
+    background-color: blueviolet;
+}
+
+
+
+/* Header */
+#subtitle, #title{
+    text-align: center;
+}
+
+#title{
+    padding-top: 30px;
+    color: var(--main-black);
+    font-weight: 900;
+}
+#subtitle{
+    margin-bottom: 15px;
+    color: var(--sub-black);
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    font-size: 1.3rem;
+    opacity: 0.7;
+}
+
+#navigation{
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#navigation li{
+    padding: 10px;
+    color: var(--sub-black);
+}
+
+/* Body */
+
+#info{
+    display: flex;
+    justify-content: center;
+}
+
+#img-div{
+    margin-top: 80px;
+    background-color: azure;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#img{
+    width: 100%;
+    height: auto;
+    filter: grayscale(60%);
+}
+
+#img-caption{
+    text-align: center;
+    font-style: italic;
+    margin-top: 8px;
+    color: hsl(143, 40%, 60%);
+}
+
+
+#tribute-info{
+    display: flex;
+    justify-content: center;
+    color: hsl(143, 20%, 30%);
+}
+
+.about-section{
+    width: 60%;
+    margin-top: 120px;
+}
+
+.about-section h2{
+    font-size: 25px;
+}
+.about-section p{
+    margin:10px 0px;
+}
+
+.personal-info{
+    display: flex;
+}
+
+.personal-info h2{
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.personal-info h3{
+    margin-top: 10px;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.born-text{
+    width: 90%;
+}
+
+.personal{
+    margin-bottom: 100px;
+}
+
+#awards h2 {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    color: hsl(143, 20%, 30%)
+}
+.awards-list{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.awards-list li::marker{
+    font-size: 2rem;
+    color:hsl(143, 40%, 60%);
+    margin-top: 10px;
+}
+
+.book{
+    background-color: #fff;
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+}
+
+.book-img img{
+    width: 150px;
+    justify-self: center;
+    margin-left: 23px;
+}
+
+.book-img figcaption{
+    font-size: 11px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#books-list{
+    display: flex;
+    justify-content: space-around;
+    flex: 1 1 200px;
+}
+
+.book{
+    width: 200px;
+    height: 270px;
+    padding: 15px;
+}
+
+.book-title{
+    text-align: center;
+    color:hsl(143, 20%, 30%);
+}
+
+#avatar{
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
 }
