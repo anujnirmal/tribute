@@ -278,6 +278,9 @@ footer{
     .awards-list ul {
         width: 80%;
     }
+    .book:nth-child(2){
+        margin-top: 8px;
+    }
     .book:nth-child(3){
         margin-top: 8px;
     }
