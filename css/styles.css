@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
     background-color: hsl(124, 60%, 95%);
@@ -16,11 +20,12 @@ root{
 header{
     background-color: hsl(143, 100%, 90%);
 }
-main{
-    /* background-color: blue; */
-}
+
 footer{
-    background-color: blueviolet;
+    text-align: center;
+    opacity: 0.7;
+    margin-top: 60px;
+    margin-bottom: 20px;
 }
 
 
@@ -56,6 +61,11 @@ footer{
     color: var(--sub-black);
 }
 
+#navigation a{
+    text-decoration: none;
+    color: var(--main-black);
+    transition: 0.3s;
+}
 /* Body */
 
 #info{
@@ -73,14 +83,14 @@ footer{
 #img{
     width: 100%;
     height: auto;
-    filter: grayscale(60%);
+    filter: grayscale(80%);
 }
 
 #img-caption{
     text-align: center;
     font-style: italic;
     margin-top: 8px;
-    color: hsl(143, 40%, 60%);
+    color: hsl(143, 40%, 30%);
 }
 
 
@@ -90,20 +100,29 @@ footer{
     color: hsl(143, 20%, 30%);
 }
 
+
+
 .about-section{
     width: 60%;
     margin-top: 120px;
 }
 
+
+
 .about-section h2{
     font-size: 25px;
 }
-.about-section p{
-    margin:10px 0px;
+/* .about-section p:nth-child(1){
+    margin:80px 0px;
+} */
+
+.about{
+    margin-top: 40px;
 }
 
 .personal-info{
     display: flex;
+    margin-top: 40px;
 }
 
 .personal-info h2{
@@ -122,7 +141,8 @@ footer{
 }
 
 .personal{
-    margin-bottom: 100px;
+    margin-top: 120px;
+    margin-bottom: 120px;
 }
 
 #awards h2 {
@@ -138,10 +158,26 @@ footer{
 }
 
 .awards-list li::marker{
-    font-size: 2rem;
+    font-size: 1.2rem;
     color:hsl(143, 40%, 60%);
     margin-top: 10px;
 }
+
+
+.awards-list li{
+    font-size: 1.1rem;
+    padding: 6px;
+    color:hsl(143, 20%, 30%);
+}
+
+.awards-list ul{
+    width: 60%;
+}
+
+#awards{
+    margin-bottom: 120px;
+}
+
 
 .book{
     background-color: #fff;
@@ -152,6 +188,7 @@ footer{
     width: 150px;
     justify-self: center;
     margin-left: 23px;
+    filter: grayscale(80%);
 }
 
 .book-img figcaption{
@@ -162,8 +199,10 @@ footer{
 
 #books-list{
     display: flex;
-    justify-content: space-around;
-    flex: 1 1 200px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    margin-bottom: 120px;
 }
 
 .book{
@@ -177,8 +216,54 @@ footer{
     color:hsl(143, 20%, 30%);
 }
 
+#quote{
+    text-align: center;
+    background-color: #fff;
+    width: 80%;
+    margin: auto;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.quote-text{
+    font-size: 1.2rem;
+    font-style: oblique;
+    opacity: 0.9;
+    margin-top: 20px;
+}
+
+.quote-by{
+    opacity: 0.8;
+    margin-top: 7px;
+    margin-bottom: 10px;
+}
+
+#quote h2{
+    opacity: 0.7;
+}
+
 #avatar{
     border-radius: 100%;
     width: 50px;
     height: 50px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 500px) {
+    .about-section{
+        width: 90%;
+    }
+
+    .about-section h2{
+        text-align: center;
+    }
+    .about{
+        text-align: justify;
+    }
+    .awards-list ul {
+        width: 80%;
+    }
+    .book:nth-child(3){
+        margin-top: 8px;
+    }
 }
