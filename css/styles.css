@@ -284,4 +284,7 @@ footer{
     .book:nth-child(3){
         margin-top: 8px;
     }
+    .awards-list li{
+        font-size: 0.9rem;
+    }
 }
