@@ -54,11 +54,19 @@ footer{
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    background-color: hsl(143, 40%, 30%);
+    color: #fff;
+    margin-top: 20px;
 }
 
 #navigation li{
     padding: 10px;
     color: var(--sub-black);
+}
+
+#navigation li:hover{
+    color: hsl(143, 100%, 90%);
+    transition: 0.2s;
 }
 
 #navigation a{
@@ -78,6 +86,7 @@ footer{
     background-color: azure;
     padding: 20px;
     border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 #img{
@@ -181,7 +190,8 @@ footer{
 
 .book{
     background-color: #fff;
-    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 5px;
 }
 
 .book-img img{
@@ -223,6 +233,7 @@ footer{
     margin: auto;
     padding: 40px;
     border-radius: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .quote-text{
